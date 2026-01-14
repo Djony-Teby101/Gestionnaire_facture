@@ -1,0 +1,64 @@
+facture_system/
+│
+├── database/
+│   └── init_db.php          # Script d'initialisation de la base
+│
+├── uploads/
+│   ├── factures/            # Dossier pour stocker les PDFs des factures
+│   └── photos/              # Dossier pour les photos des agents
+│
+├── includes/
+│   ├── config.php           # Configuration de la base de données
+│   ├── functions.php        # Fonctions utilitaires
+│   └── header.php           # En-tête commun
+│
+├── prestataires/
+│   ├── index.php            # Liste des prestataires
+│   ├── ajouter.php          # Ajouter un prestataire
+│   └── voir.php             # Voir les factures d'un prestataire
+│
+├── factures/
+│   ├── index.php            # Liste des factures avec recherche
+│   ├── ajouter.php          # Ajouter une facture
+│   └── telecharger.php      # Télécharger/visualiser une facture
+│
+└── index.php                # Page d'accueil
+
+Configurer la base de données:
+
+Créez une base de données MySQL nommée facture_system
+
+Exécutez le script database/init_db.php pour créer les tables
+
+Configurer les dossiers d'upload:
+
+Créez les dossiers uploads/factures et uploads/photos
+
+Assurez-vous qu'ils ont les permissions d'écriture (chmod 755 ou 777 selon l'environnement)
+
+Modifier la configuration:
+
+Ajustez les paramètres de connexion dans includes/config.php selon votre environnement
+
+Accéder à l'application:
+
+Ouvrez index.php dans votre navigateur
+
+Fonctionnalités implémentées
+✅ Enregistrement des factures dans la base de données
+
+✅ Gestion des prestataires avec photos
+
+✅ Upload sécurisé des fichiers PDF et images
+
+✅ Visualisation des factures sous forme de liste
+
+✅ Recherche par numéro de facture, nom de prestataire ou date
+
+✅ Visualisation et téléchargement des factures PDF
+
+✅ Interface responsive avec Bootstrap
+
+✅ Code commenté et structuré pour faciliter les modifications
+
+Ce système offre une base solide pour le suivi de factures et peut être facilement étendu avec des fonctionnalités supplémentaires selon les besoins.
